@@ -1,12 +1,12 @@
 # 🚀 AI Engineer Roadmap
 
-> A comprehensive, hands-on roadmap to becoming a world-class AI Engineer, AI Systems Engineer, and Applied AI Research Engineer.
+> **A comprehensive, hands-on roadmap to becoming a world-class AI Engineer, AI Systems Engineer, and Applied AI Research Engineer.**
 
-This repository is my long-term learning journal and implementation roadmap toward mastering the complete AI engineering stack—from machine learning fundamentals to distributed LLM training, CUDA programming, inference optimization, and production AI systems.
+This repository is my long-term learning journey toward mastering every layer of modern AI engineering—from computer science fundamentals and systems programming to machine learning, large language models, distributed training, CUDA programming, inference optimization, and production AI infrastructure.
 
-Unlike typical AI roadmaps that focus only on building applications with APIs, this repository emphasizes understanding how modern AI systems are built, trained, optimized, deployed, and scaled.
+Unlike most AI roadmaps that focus only on using APIs or building AI applications, this repository is designed to understand **how AI systems are built, trained, optimized, deployed, and scaled**.
 
-The goal is to bridge the gap between software engineering, machine learning engineering, systems programming, and AI research.
+The ultimate goal is to become an engineer capable of designing, building, training, optimizing, and operating production-scale AI systems.
 
 ---
 
@@ -14,466 +14,328 @@ The goal is to bridge the gap between software engineering, machine learning eng
 
 This repository aims to help me:
 
-- Master AI engineering from fundamentals to expert level
-- Build production-grade AI systems
-- Understand modern LLM architectures
-- Learn distributed model training
-- Master CUDA and GPU programming
-- Learn efficient inference optimization
-- Build scalable AI infrastructure
-- Reproduce cutting-edge research papers
-- Develop strong software engineering skills
-- Prepare for Senior/Staff AI Engineer roles
+* Master Computer Science fundamentals
+* Become an exceptional Software Engineer
+* Develop deep Machine Learning expertise
+* Understand modern Deep Learning architectures
+* Master PyTorch internals
+* Learn Large Language Models from first principles
+* Fine-tune and align foundation models
+* Learn CUDA and GPU programming
+* Optimize AI inference systems
+* Build distributed AI systems
+* Design scalable AI infrastructure
+* Reproduce cutting-edge research papers
+* Build production-grade AI applications
+* Prepare for Senior, Staff, and Principal AI Engineering roles
 
 ---
 
-# 📌 Philosophy
+# 🧠 Philosophy
 
-This roadmap follows a simple principle:
+This roadmap follows one simple principle:
 
 > **Don't just use AI. Learn how AI is built.**
 
-Instead of only learning prompt engineering or API integrations, this repository focuses on understanding the complete lifecycle of modern AI systems:
+Modern AI Engineers should understand the complete AI stack:
 
-- Mathematics
-- Machine Learning
-- Deep Learning
-- GPU Programming
-- Large Language Models
-- Fine-Tuning
-- Distributed Training
-- AI Infrastructure
-- Production Deployment
-- Research Engineering
+* Computer Science
+* Software Engineering
+* Machine Learning
+* Deep Learning
+* GPU Programming
+* Distributed Systems
+* AI Infrastructure
+* Research Engineering
+* Production Deployment
 
 ---
 
-# 🗺️ Learning Roadmap
+# 🗺️ Three Parallel Learning Tracks
 
-```
-Computer Science
-        │
-        ▼
-Mathematics
-        │
-        ▼
-Machine Learning
-        │
-        ▼
-Deep Learning
-        │
-        ▼
-PyTorch
-        │
-        ▼
-Computer Vision & NLP
-        │
-        ▼
-Transformers
-        │
-        ▼
-LLMs
-        │
-        ▼
-Fine-Tuning
-        │
-        ▼
-Distributed Training
-        │
-        ▼
-CUDA Programming
-        │
-        ▼
-Inference Optimization
-        │
-        ▼
-AI Infrastructure
-        │
-        ▼
-LLMOps
-        │
-        ▼
-Research Engineering
-        │
-        ▼
-Production AI Systems
+Instead of following one long linear roadmap, this repository is organized into three parallel learning tracks that progress together.
+
+```text
+                    Senior AI Engineer
+                           ▲
+                           │
+        ┌──────────────────┼──────────────────┐
+        │                  │                  │
+        ▼                  ▼                  ▼
+
+ Computer Systems      AI / ML Track      AI Infrastructure
+      Track                                 & Production
+
+        │                  │                  │
+        ▼                  ▼                  ▼
+
+ Computer Science      Mathematics         Linux
+ Operating Systems     Machine Learning    Git
+ Networking            Deep Learning       Docker
+ C++                   PyTorch             Kubernetes
+ CUDA                  Transformers        Databases
+ GPU Programming       LLMs                MLOps
+ Distributed Systems   Fine-Tuning         LLMOps
+ Performance           Alignment           Cloud
+ Compiler Basics       Diffusion           Monitoring
+
+        └──────────────────┼──────────────────┘
+                           ▼
+                 Production AI Systems
+                           ▼
+                 Research Engineering
+                           ▼
+             Staff / Principal AI Engineer
 ```
 
 ---
 
 # 📂 Repository Structure
 
-```
+```text
 AI-Engineer-Roadmap/
 
-│
-├── 00-Computer-Science/
-├── 01-Mathematics/
-├── 02-Machine-Learning/
-├── 03-Deep-Learning/
-├── 04-PyTorch/
-├── 05-Computer-Vision/
-├── 06-NLP/
-├── 07-Transformers/
-├── 08-Large-Language-Models/
-├── 09-Fine-Tuning/
-├── 10-Distributed-Training/
-├── 11-CUDA/
-├── 12-Inference/
-├── 13-MLOps/
-├── 14-LLMOps/
-├── 15-AI-Infrastructure/
-├── 16-Multi-Agent-Systems/
-├── 17-Research-Papers/
-├── 18-Projects/
-├── resources/
-├── notes/
+├── Track-01-Computer-Systems/
+│   ├── 00-Programming/
+│   ├── 01-Computer-Science/
+│   ├── 02-Linux/
+│   ├── 03-Git/
+│   ├── 04-Cpp/
+│   ├── 05-Data-Structures/
+│   ├── 06-Algorithms/
+│   ├── 07-Computer-Architecture/
+│   ├── 08-Operating-Systems/
+│   ├── 09-Networking/
+│   ├── 10-Databases/
+│   ├── 11-System-Design/
+│   ├── 12-Distributed-Systems/
+│   ├── 13-CUDA/
+│   └── 14-Performance/
+
+├── Track-02-AI-and-ML/
+│   ├── 00-Mathematics/
+│   ├── 01-Machine-Learning/
+│   ├── 02-Deep-Learning/
+│   ├── 03-PyTorch/
+│   ├── 04-Computer-Vision/
+│   ├── 05-NLP/
+│   ├── 06-Transformers/
+│   ├── 07-Large-Language-Models/
+│   ├── 08-Fine-Tuning/
+│   ├── 09-Alignment/
+│   ├── 10-Diffusion/
+│   ├── 11-Reinforcement-Learning/
+│   ├── 12-Multimodal/
+│   └── 13-Research/
+
+├── Track-03-AI-Infrastructure/
+│   ├── 00-Docker/
+│   ├── 01-Kubernetes/
+│   ├── 02-MLflow/
+│   ├── 03-LLMOps/
+│   ├── 04-RAG/
+│   ├── 05-Agents/
+│   ├── 06-Vector-Databases/
+│   ├── 07-Inference/
+│   ├── 08-vLLM/
+│   ├── 09-TensorRT/
+│   ├── 10-Ray/
+│   ├── 11-Kafka/
+│   ├── 12-Cloud/
+│   ├── 13-Monitoring/
+│   └── 14-AI-Security/
+
+├── Projects/
+├── Paper-Reproductions/
+├── Resources/
+├── Notes/
 └── README.md
 ```
 
 ---
 
-# 📈 Progress Tracker
+# 📊 Progress Dashboard
 
-| Phase | Topic | Status |
-|--------|-------|--------|
-| 00 | Computer Science | ⬜ |
-| 01 | Mathematics | ⬜ |
-| 02 | Machine Learning | ⬜ |
-| 03 | Deep Learning | ⬜ |
-| 04 | PyTorch | ⬜ |
-| 05 | Computer Vision | ⬜ |
-| 06 | NLP | ⬜ |
-| 07 | Transformers | ⬜ |
-| 08 | Large Language Models | ⬜ |
-| 09 | Fine-Tuning | ⬜ |
-| 10 | Distributed Training | ⬜ |
-| 11 | CUDA Programming | ⬜ |
-| 12 | Inference Optimization | ⬜ |
-| 13 | MLOps | ⬜ |
-| 14 | LLMOps | ⬜ |
-| 15 | AI Infrastructure | ⬜ |
-| 16 | Multi-Agent Systems | ⬜ |
-| 17 | Research Engineering | ⬜ |
-| 18 | Capstone Projects | ⬜ |
+## 🖥️ Track 1 — Computer Systems
+
+| Module                  | Status |
+| ----------------------- | ------ |
+| Programming             | ⬜      |
+| Linux                   | ⬜      |
+| Git                     | ⬜      |
+| C++                     | ⬜      |
+| Data Structures         | ⬜      |
+| Algorithms              | ⬜      |
+| Computer Architecture   | ⬜      |
+| Operating Systems       | ⬜      |
+| Networking              | ⬜      |
+| Databases               | ⬜      |
+| System Design           | ⬜      |
+| Distributed Systems     | ⬜      |
+| CUDA Programming        | ⬜      |
+| Performance Engineering | ⬜      |
 
 ---
 
-# 🧩 Phase 00 — Computer Science
+## 🧠 Track 2 — AI & Machine Learning
 
-### Objectives
-
-- Become a strong software engineer
-- Learn systems programming fundamentals
-- Understand networking and operating systems
-
-### Topics
-
-- [ ] Python (Advanced)
-- [ ] Modern C++
-- [ ] Bash
-- [ ] Git
-- [ ] Design Patterns
-- [ ] Data Structures
-- [ ] Algorithms
-- [ ] Object-Oriented Programming
-- [ ] Functional Programming
-- [ ] Operating Systems
-- [ ] Computer Architecture
-- [ ] Networking
-- [ ] System Design
+| Module                      | Status |
+| --------------------------- | ------ |
+| Mathematics                 | ⬜      |
+| Machine Learning            | ⬜      |
+| Deep Learning               | ⬜      |
+| PyTorch                     | ⬜      |
+| Computer Vision             | ⬜      |
+| Natural Language Processing | ⬜      |
+| Transformers                | ⬜      |
+| Large Language Models       | ⬜      |
+| Fine-Tuning                 | ⬜      |
+| Model Alignment             | ⬜      |
+| Diffusion Models            | ⬜      |
+| Reinforcement Learning      | ⬜      |
+| Multimodal AI               | ⬜      |
+| Research Engineering        | ⬜      |
 
 ---
 
-# 📐 Phase 01 — Mathematics
+## ☁️ Track 3 — AI Infrastructure & Production
 
-- [ ] Linear Algebra
-- [ ] Calculus
-- [ ] Probability
-- [ ] Statistics
-- [ ] Optimization
-- [ ] Information Theory
-
----
-
-# 🤖 Phase 02 — Machine Learning
-
-- [ ] Linear Regression
-- [ ] Logistic Regression
-- [ ] SVM
-- [ ] Decision Trees
-- [ ] Random Forest
-- [ ] XGBoost
-- [ ] LightGBM
-- [ ] CatBoost
-- [ ] Clustering
-- [ ] Dimensionality Reduction
-- [ ] Ensemble Learning
+| Module                         | Status |
+| ------------------------------ | ------ |
+| Docker                         | ⬜      |
+| Kubernetes                     | ⬜      |
+| MLflow                         | ⬜      |
+| LLMOps                         | ⬜      |
+| Retrieval-Augmented Generation | ⬜      |
+| AI Agents                      | ⬜      |
+| Vector Databases               | ⬜      |
+| Inference Optimization         | ⬜      |
+| vLLM                           | ⬜      |
+| TensorRT-LLM                   | ⬜      |
+| Ray                            | ⬜      |
+| Kafka / RabbitMQ               | ⬜      |
+| Cloud Platforms                | ⬜      |
+| Monitoring & Observability     | ⬜      |
+| AI Security                    | ⬜      |
 
 ---
 
-# 🧠 Phase 03 — Deep Learning
+# 📖 Learning Methodology
 
-- [ ] Neural Networks
-- [ ] CNNs
-- [ ] RNNs
-- [ ] LSTM
-- [ ] GRU
-- [ ] Residual Networks
-- [ ] EfficientNet
-- [ ] Vision Transformers
-- [ ] Attention Mechanisms
-- [ ] GANs
-- [ ] Diffusion Models
+Every module in this repository follows the same workflow.
 
----
-
-# 🔥 Phase 04 — PyTorch
-
-- [ ] Tensors
-- [ ] Autograd
-- [ ] Dataset API
-- [ ] DataLoader
-- [ ] Custom Models
-- [ ] Hooks
-- [ ] Mixed Precision
-- [ ] Torch Compile
-- [ ] TorchScript
-- [ ] Profiling
+```text
+📖 Learn Theory
+      ↓
+📚 Read Books & Papers
+      ↓
+🎥 Watch Lectures
+      ↓
+💻 Implement From Scratch
+      ↓
+🧪 Complete Mini Projects
+      ↓
+🚀 Build Production Project
+      ↓
+📝 Document Learnings
+      ↓
+📊 Benchmark & Optimize
+      ↓
+✅ Complete Phase
+```
 
 ---
 
-# 👁️ Phase 05 — Computer Vision
+# 🏆 Milestones
 
-- [ ] Image Classification
-- [ ] Object Detection
-- [ ] Semantic Segmentation
-- [ ] Instance Segmentation
-- [ ] OCR
-- [ ] Image Captioning
-- [ ] Video Understanding
+## 🥉 Foundation Engineer
 
----
-
-# 💬 Phase 06 — NLP
-
-- [ ] Tokenization
-- [ ] Embeddings
-- [ ] Sequence Models
-- [ ] Seq2Seq
-- [ ] BERT
-- [ ] GPT
-- [ ] T5
+* Strong programming skills
+* Linux
+* Git
+* Mathematics
+* Machine Learning
+* Deep Learning
+* Docker
 
 ---
 
-# ⚡ Phase 07 — Transformers
+## 🥈 AI Engineer
 
-- [ ] Attention
-- [ ] Multi-Head Attention
-- [ ] Positional Encoding
-- [ ] RoPE
-- [ ] KV Cache
-- [ ] Flash Attention
-- [ ] Mixture of Experts
-
----
-
-# 🦙 Phase 08 — Large Language Models
-
-- [ ] Llama
-- [ ] Gemma
-- [ ] Mistral
-- [ ] Qwen
-- [ ] Phi
-- [ ] DeepSeek
-- [ ] Model Architectures
-- [ ] Tokenizers
-- [ ] Context Windows
+* PyTorch
+* Transformers
+* Large Language Models
+* Retrieval-Augmented Generation
+* Fine-Tuning
+* Kubernetes
+* MLOps
 
 ---
 
-# 🎯 Phase 09 — Fine-Tuning
+## 🥇 Senior AI Engineer
 
-- [ ] Full Fine-Tuning
-- [ ] LoRA
-- [ ] QLoRA
-- [ ] PEFT
-- [ ] TRL
-- [ ] DPO
-- [ ] RLHF
-- [ ] ORPO
-- [ ] GRPO
-
----
-
-# 🚀 Phase 10 — Distributed Training
-
-- [ ] DDP
-- [ ] FSDP
-- [ ] DeepSpeed
-- [ ] Megatron-LM
-- [ ] Tensor Parallelism
-- [ ] Pipeline Parallelism
-- [ ] ZeRO Optimization
+* CUDA Programming
+* GPU Optimization
+* Distributed Training
+* DeepSpeed
+* FSDP
+* TensorRT
+* vLLM
+* AI System Design
+* Production Infrastructure
 
 ---
 
-# ⚙️ Phase 11 — CUDA Programming
+## 💎 Staff / Principal AI Engineer
 
-- [ ] GPU Architecture
-- [ ] CUDA Kernels
-- [ ] Streams
-- [ ] Events
-- [ ] Shared Memory
-- [ ] Warp Programming
-- [ ] CUDA Graphs
-- [ ] cuDNN
-- [ ] NCCL
-
----
-
-# ⚡ Phase 12 — Inference Optimization
-
-- [ ] vLLM
-- [ ] TensorRT-LLM
-- [ ] ONNX Runtime
-- [ ] Quantization
-- [ ] AWQ
-- [ ] GPTQ
-- [ ] GGUF
-- [ ] Speculative Decoding
-- [ ] Continuous Batching
+* Custom CUDA Kernels
+* Distributed AI Systems
+* Compiler Awareness
+* Training Foundation Models
+* Large-Scale Inference
+* Research Engineering
+* Open Source Contributions
+* Technical Leadership
 
 ---
 
-# 🛠️ Phase 13 — MLOps
+# 🚀 Repository Workflow
 
-- [ ] Docker
-- [ ] Kubernetes
-- [ ] MLflow
-- [ ] Weights & Biases
-- [ ] CI/CD
-- [ ] Model Registry
-- [ ] Experiment Tracking
+Each module will contain:
 
----
-
-# 🤖 Phase 14 — LLMOps
-
-- [ ] RAG
-- [ ] Vector Databases
-- [ ] Prompt Engineering
-- [ ] Evaluation
-- [ ] Guardrails
-- [ ] Monitoring
-- [ ] LangGraph
-- [ ] MCP
-- [ ] AI Agents
+* 📚 Learning resources
+* 📝 Personal notes
+* 📖 Book summaries
+* 📄 Paper summaries
+* 💻 Hands-on implementations
+* 🧪 Experiments
+* 🚀 Projects
+* 📊 Benchmarks
+* 🏆 Interview preparation
 
 ---
 
-# ☁️ Phase 15 — AI Infrastructure
-
-- [ ] Kafka
-- [ ] RabbitMQ
-- [ ] Redis
-- [ ] PostgreSQL
-- [ ] MinIO
-- [ ] Ray
-- [ ] Kubernetes
-- [ ] GPU Scheduling
-- [ ] Distributed Storage
-
----
-
-# 🤝 Phase 16 — Multi-Agent Systems
-
-- [ ] Agent Architectures
-- [ ] Planning
-- [ ] Memory
-- [ ] Tool Calling
-- [ ] Reflection
-- [ ] Multi-Agent Collaboration
-- [ ] Workflow Orchestration
-
----
-
-# 📚 Phase 17 — Research Engineering
-
-- [ ] Read papers weekly
-- [ ] Reproduce research
-- [ ] Benchmark models
-- [ ] Modify architectures
-- [ ] Publish implementations
-- [ ] Write technical blogs
-
----
-
-# 🚀 Phase 18 — Capstone Projects
-
-Projects to demonstrate end-to-end AI engineering skills.
-
-Examples:
-
-- [ ] Distributed LLM Training Pipeline
-- [ ] Custom CUDA Attention Kernel
-- [ ] LLM Fine-Tuning Framework
-- [ ] Production RAG Platform
-- [ ] High-Performance Inference Server
-- [ ] AI Agent Platform
-- [ ] Enterprise AI Search Engine
-- [ ] Multi-modal AI Assistant
-- [ ] Vision-Language Application
-- [ ] Research Paper Reproduction
-
----
-
-# 📖 Learning Resources
-
-This repository includes:
-
-- Personal notes
-- Implementation walkthroughs
-- Paper summaries
-- Code examples
-- Experiments
-- Benchmarks
-- Projects
-- Interview preparation
-- Best practices
-
----
-
-# 🏆 End Goal
+# 📈 End Goal
 
 By completing this roadmap, I aim to confidently:
 
-- Design production AI systems
-- Train large-scale models
-- Fine-tune foundation models
-- Optimize GPU workloads
-- Develop CUDA kernels
-- Deploy scalable AI infrastructure
-- Serve LLMs efficiently
-- Build agentic AI systems
-- Reproduce and extend research papers
-- Operate at the level of a Senior AI Engineer or Applied AI Research Engineer
+* Design production AI systems
+* Build scalable AI platforms
+* Train and fine-tune foundation models
+* Develop CUDA kernels
+* Optimize GPU workloads
+* Deploy distributed AI infrastructure
+* Build efficient inference systems
+* Reproduce and extend research papers
+* Lead AI engineering projects
+* Operate at the level of a Senior, Staff, or Principal AI Engineer
 
 ---
 
-## ⭐ Progress Philosophy
+# ⭐ Progress Philosophy
 
 > **Learn → Build → Optimize → Scale → Share**
 
-Every phase in this repository follows the same workflow:
+The objective of this repository is not to complete tutorials.
 
-1. Learn the theory
-2. Read documentation and papers
-3. Implement from scratch
-4. Build practical projects
-5. Optimize performance
-6. Document learnings
-7. Publish the work
-
-The objective is not just to complete tutorials, but to develop the depth of understanding required to build, optimize, and maintain modern AI systems at scale.
+The objective is to develop the depth of knowledge and engineering skills required to design, build, optimize, and operate modern AI systems at scale.
