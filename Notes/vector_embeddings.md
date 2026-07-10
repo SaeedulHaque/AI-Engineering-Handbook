@@ -64,4 +64,4 @@ When an LLM retrieves relevant information, it’s often comparing vectors.
 -> The closest matches get used to generate a response.
 This is how search engines and chatbots find relevant answers.
 
-[text](https://medium.com/@tahirbalarabe2/vectors-in-large-language-models-4731d8be349d)
+[Medium article reference](https://medium.com/@tahirbalarabe2/vectors-in-large-language-models-4731d8be349d)

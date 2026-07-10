@@ -16,7 +16,7 @@ This technique is effective for spelling correction, password analysis, and non-
 ### Subword tokenization
 Subword tokenization splits words into smaller, meaningful units, such as prefixes, suffixes, or syllables. For “unbreakable,” this might be [“un,” “break,” “able”]. This method helps models handle out-of-vocabulary (OOV) words by recognizing parts of them, even if the full word is unfamiliar. Subword tokenization is popular in modern language models like BERT and GPT. It’s particularly useful for morphologically rich languages or when training on a limited vocabulary.
 
-[text](https://nebius.com/blog/posts/what-is-token-in-ai)
+[Nebius reference](https://nebius.com/blog/posts/what-is-token-in-ai)
 
 ---
 
